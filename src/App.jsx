@@ -28,9 +28,9 @@ export default function App() {
               <Route path="/register">
                 <Auth isSigningUp />
               </Route>
-              <PrivateRoute path="/confirm-email">
+              <Route path="/confirm-email">
                 <ConfirmEmail />
-              </PrivateRoute>
+              </Route>
               <PrivateRoute path="/notes/:id/edit">
                 <EditNote />
               </PrivateRoute>
