@@ -19,9 +19,9 @@ export default function App() {
           <Header />
           <main className={styles.main}>
             <Switch>
-              <Route exact path="/">
+              <PrivateRoute exact path="/">
                 <Home />
-              </Route>
+              </PrivateRoute>
               <Route path="/login">
                 <Auth />
               </Route>
